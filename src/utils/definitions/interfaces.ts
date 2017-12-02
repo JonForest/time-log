@@ -1,5 +1,5 @@
 export interface TimeLogRecord {
-  id?: string|number;
+  id?: string;
   startTime: Date;
   finishTime?: Date;
   code?: string;

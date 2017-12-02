@@ -1,8 +1,9 @@
 <div>
   <h1>Welcome to Glimmer!</h1>
-  <NewTimeRecord @setDetails={{setDetails}}></NewTimeRecord>
+  <NewTimeRecord @setDetails={{action setDetails}}></NewTimeRecord>
   <p>---------------------------------------------</p>
-  <TimeLogRecordComponent></TimeLogRecordComponent>
-
+  {{#each timeLogRecords key="@index" as |timeLogRecord|}}
+    <TimeLogRecordComponent @timeLogRecord={{timeLogRecord}}></TimeLogRecordComponent>
+  {{/each}}
 </div>
 

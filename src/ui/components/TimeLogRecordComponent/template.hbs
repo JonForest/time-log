@@ -1,6 +1,6 @@
 <div>
-  <input name="code" id="code">
-  <input name="description" id="description">
-  <input name="start" type="time">
-  <input name="end" type="time">
+  <input name="code" id="code" value="{{@timeLogRecord.code}}">
+  <input name="description" id="description" value="{{@timeLogRecord.description}}">
+  <input name="start" type="time" value="{{get-time @timeLogRecord.startTime}}">
+  <input name="end" type="time" value="{{@timeLogRecord.startTime}}">
 </div>
